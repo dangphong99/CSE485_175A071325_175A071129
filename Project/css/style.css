@@ -1,32 +1,4 @@
-/*body {
-	margin: 0px auto;
-	font-family: 'Open Sans',sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-}	
-#menu1 {
-	display: flex;
-	text-decoration: none;
-	justify-content: space-between;
-	background-color: #024282;
-   
-}
-.nav-item{
-	padding-left: 105px;
-}
-.nav-link{
-	display: flex;
-	height: 100px;
-	padding-top: 20px;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    padding-left: 20px;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-	color: #fdb913;
-} */
+
 body {
 	margin: 0px auto;
 	font-family: 'Open Sans',sans-serif;
@@ -87,6 +59,7 @@ a {
 	height: 100px;
 	padding-top: 20px;
 }
+
 
 #carouselExampleCaptions {
 	padding-right: 30px; 
@@ -225,7 +198,7 @@ ul {
 	background-size: 132px !important;
 	padding-top: 50px
 }
-#triangle-down {
+/*#triangle-down {
     width: 0;
     height: 0;
     border-left: 35px solid transparent;
@@ -240,7 +213,7 @@ ul {
 	position: absolute;
 	top: -300%;
 	left: -2%;
-}
+}*/
 
 .dropdown {
 	display: flex;
