@@ -200,22 +200,21 @@ ul {
 	background-size: 132px !important;
 	padding-top: 50px
 }
-/*#triangle-down {
-    width: 0;
+.dropdown span{
+	width: 0;
     height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 35px solid green;
-    z-index: 3;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;
+    z-index: 5;
     position: relative;
 }
 
-#triangle-button {
-	z-index: 4;
+.dropdown span .fa {
 	position: absolute;
-	top: -300%;
-	left: -2%;
-}*/
+	top: -50px;
+	left: -12px;
+}
 
 .dropdown {  
   position: absolute;
@@ -230,6 +229,10 @@ ul {
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
+}
+
+.carousel-caption{
+	z-index: 1;
 }
 .card {
 	border: 0;
@@ -250,7 +253,7 @@ ul {
     	justify-content: flex-end;
 	}
 
-    #triangle-down{
+    .dropdown span{
     	display: none;
     	
     }
