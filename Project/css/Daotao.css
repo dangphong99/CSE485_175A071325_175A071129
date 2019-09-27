@@ -128,8 +128,24 @@ ul {
 	left: -2%;
 }
 
-.dropdown {
+.dropdown span{
+	width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;
+    z-index: 5;
+    position: relative;
+}
+
+.dropdown span .fa {
 	position: absolute;
+	top: -50px;
+	left: -12px;
+}
+
+.dropdown {  
+  position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
