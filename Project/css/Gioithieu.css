@@ -24,7 +24,11 @@ a {
 }
 
 .nav1 {
+
 	font-size: 13px;
+}
+.nav-item{
+	padding-left: 105px;
 }
 
 #nav2 {
@@ -32,8 +36,8 @@ a {
 }
 
 .nav2 {
-	color: black;
-	font-size: 20px;
+	font-size: 17px;
+	padding-left:20px;
 }
 
 .nav2 i {
@@ -41,7 +45,7 @@ a {
 }
 
 .nav2:hover {
-	color:#9ACD32;
+	color:#F7DC6F ;
 }
 
 

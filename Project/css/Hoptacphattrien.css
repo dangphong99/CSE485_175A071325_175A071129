@@ -157,7 +157,6 @@ ul {
     z-index: 2;
     margin-top: 0px;
 }
-
 .btn-responsive {
 	display: none;
 }
@@ -207,7 +206,7 @@ ul {
 }
 
 .img img{
-	height: 287px;
+	height: 331px;
 }
 
 article {
@@ -253,6 +252,3 @@ article {
 		margin: 0px auto;
 	}
 }
-
-
-
