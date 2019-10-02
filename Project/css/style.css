@@ -200,6 +200,13 @@ ul {
 	background-size: 132px !important;
 	padding-top: 50px
 }
+#triangle-button {
+    z-index: 4;
+    position: absolute;
+    top: -52px;
+    left: -14px;
+}
+
 .dropdown span{
 	width: 0;
     height: 0;
@@ -225,6 +232,56 @@ ul {
     z-index: 2;
     margin-top: 0px;
 }
+
+div .show {
+	transform: none !important;
+	padding: 0px;
+}
+
+.span {
+	width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;
+    z-index: 3;
+    font-size:200px;
+    position: relative;
+}
+
+#triangle-button {
+	z-index: 4;
+	position: absolute;
+	top: -52px;
+	left: -14px;
+}
+
+.dropdown {
+	display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu {
+	background-color: rgba(2,66,130,0.90);
+}
+
+
+
+.btn-responsive {
+	display: none;
+	z-index: 2; 
+	background-color: white; 
+	border: 1px solid rgba(0, 0,100, 0.1); 
+	top: -90px; 
+	position: absolute;
+}
+
+div .show{
+	position: 0px !important;
+	margin: 0px !important;
+}
+
+
 
 .carousel-inner img {
 	width: 100%;
