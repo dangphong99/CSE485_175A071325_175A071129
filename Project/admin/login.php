@@ -42,10 +42,7 @@
 
 </head>
 <body>
-     <div class="container">
-      
-      <div class="row" style="margin: 150px;">
-        <div class="col-md-6 col-md-push-3" style="margin: 0 auto;">
+   
         	 <form action="" method="POST">
           <legend>Đăng nhập hệ thống</legend>
 
@@ -62,8 +59,6 @@
           <button type="submit" name="sm_login" class="btn btn-primary">Đăng nhập</button>
           <span>Nếu bạn chưa có tài khoản? <a href="index.php?page=register" style="color: red;">Đăng ký</a></span>
         </form>
-      </div>
-    </div>
-  </div>
+    
 </body>
 </html>
