@@ -1,7 +1,7 @@
 <?php 
   session_start(); 
   if (!isset($_SESSION['id'])) {
-    header("../login.php");
+    header("location:../index.php");
   }
 
   include_once '../config/myConfig.php'; 

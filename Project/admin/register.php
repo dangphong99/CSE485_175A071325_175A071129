@@ -1,3 +1,4 @@
+
 <form action="" method="POST">
 	<legend>Đăng ký tài khoản</legend>
 
