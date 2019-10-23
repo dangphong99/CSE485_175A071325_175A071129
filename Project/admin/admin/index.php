@@ -1,59 +1,54 @@
 <?php 
-  session_start(); 
-  if (!isset($_SESSION['id'])) {
-    header("location:../index.php");
+ session_start();
+
+if (isset($_SESSION['id'])) {
+    header("Location: admin/");
   }
 
-  include_once '../config/myConfig.php'; 
-
-?>
+ include_once 'config/myConfig.php'; 
+?> 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
-
 </head>
 <body>
-  <div class="container">
-
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Logo</a>
-          </div>
+	 <div class="container">
       
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello: <?php if (isset($_SESSION['name'])) { echo $_SESSION['name']; } ?></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Thông tin</a></li>
-                  <li><a href="../logout.php">Đăng xuất</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
+      <div class="row" style="margin: 150px;">
+        <div class="col-md-6 col-md-push-3" style="margin: 0 auto;">
+           <?php 
+          
+            if (isset($_GET['page'])) {
+              $page = $_GET['page'];
+            }else{ $page = 'login'; }
+          
+            switch ($page) {
+              case 'register':
+                include 'register.php';
+                break;
+              
+              case 'login':
+                include 'login.php';
+                break;
+          
+              default:
+                echo "<h3 style='color: red;'>EROR 404 trang không tồn tại!</h3>";
+                break;
+            }
+          
+           ?>
         </div>
-      </nav>
+      </div>
 
-	
+    </div>
+    
 </body>
 </html>
